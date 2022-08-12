@@ -1,0 +1,43 @@
+*{
+    margin: 20px;
+    padding: 0;
+}
+.container{
+    background-color: rgb(18, 187, 187);
+    
+    
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 300px 1fr;
+    
+    row-gap: 12px;
+    column-gap: 12px;
+
+
+}
+
+   
+
+.item-1{
+    background-color: rgb(18, 187, 187);
+    grid-column-start: 1;
+    grid-column-end:-1;
+    justify-self: center;
+}
+.name{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.contacts{
+    font-size: medium;
+}
+.skill{
+    font-size: medium;
+}
+.languages{
+    font-size: medium;
+}
+.item-2{
+    text-align: center;
+}
