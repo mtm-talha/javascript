@@ -1,0 +1,62 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image:url(images/wall.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.signup-form{
+    width: 300px;
+ background: #fff;
+    padding: 20px;
+    margin: 8% auto ;
+    text-align: center;
+
+    
+}
+.signup-form h1{
+    color: rgb(24, 16, 100);
+    margin: bottom 30px; 
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    border: 1px solid rgb(68, 170, 81);
+    outline: none;
+}
+button{
+    color: rgb(213, 214, 219);
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.SignUP-btn{
+    background-color: rgb(35, 35, 177);
+}
+.google-btn{
+    background-color: rgb(35, 35, 177)
+}
+img{
+    width: 100px;
+    padding-bottom: 20px;
+    margin-top: -50px
+    
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.OR{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
