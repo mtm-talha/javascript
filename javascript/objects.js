@@ -1,6 +1,6 @@
 let person={
-    firstName: 'Saad'
-    lastName: 'Ahmed'
+    firstName: 'Saad',
+    lastName: 'Ahmed',
     age: 20
 }
 
