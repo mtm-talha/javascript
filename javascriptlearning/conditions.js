@@ -20,7 +20,7 @@ else{
 
 //switch
 
-var day = prompt("what is the day ?");
+let day =prompt("what is the day today?" );
 switch(day){
     case '0':
         console.log("monday");
