@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #649260;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: rgb(88, 107, 34);
+  }
+
+  /* Add a card effect for articles */
+  .card1 {
+    background-color: rgb(60, 114, 128);
+    padding: 20px;
+    margin-top: 20px;
+    width: 550px;
+    float: right;
+    border-right: 100px;
+    height: 400px;
+    text-align: center;
+  }
+
+  .card2 {
+    background-color: rgb(168, 70, 147);
+    padding: 20px;
+    margin-top: 20px;
+    width: 550px;
+    float: left;
+    border-right: 100px;
+    height: 400px;
+    text-align: center;
+  }
