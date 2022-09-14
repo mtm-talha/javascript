@@ -32,7 +32,7 @@ function insertNewData(data){
     cell2= newRow.insertCell(0);
     cell2.innerHTML = data.class;
     cell3= newRow.insertCell(0);
-    cell3.innerHTML = data.rollNo.;
+    cell3.innerHTML = data.rollNo;
     cell4= newRow.insertCell(0);
     cell4.innerHTML = data.age;
     cell5= newRow.insertCell(0);
