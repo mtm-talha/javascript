@@ -1,2 +1,6 @@
 I am testing
-uana
+I have learn about tacking and untracking
+the thigs which you have to do before push are these
+1) add the file as "git add hello.txt"
+2) commit the file as "git commit -m "message you want to share with other developers."
+3) push the file as "git push origin hamza"
