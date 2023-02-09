@@ -1,5 +1,4 @@
 body {
-    background: #e6ecf0;
     font-family: 'Asap', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -48,16 +47,48 @@ img {
 
 .tweet-info-counts {
     display: flex;
-    margin-left: 60px;
     margin-top: 10px;
 }
 
 .tweet-info-counts div {
     display: flex;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .tweet-info-counts div svg {
     color: #657786;
     margin-right: 10px;
+}
+
+.card-container {
+    border-radius: 20px;
+}
+
+.card-container img {
+    border-radius: 20px 20px 0 0;
+}
+
+.more-trend-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.second-paragraph {
+    font-weight: lighter;
+}
+
+.first-line {
+    font-weight: bold;
+}
+
+.twitter-container {
+    background-color: #fafafa;
 }
