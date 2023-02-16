@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #a8ff35; 
+   /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%,url("assts/img/1.jpeg")); */
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    size: 500px;
+}
+.tophead{
+    margin-top: 20px;
+
+}
+
+main{
+    margin-top: 20px;
+}
+
+#button
+{
+    height: auto;
+    width: auto;
+    text-align: center;
+    border: 50px;
+}

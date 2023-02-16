@@ -2,8 +2,7 @@
 {
     float: centre;
     margin-top:0;
-    
-    height: 350px;
+    height: 35%;
     width: 100%;
     background-color: #a8ff35;
     }
@@ -22,13 +21,6 @@
         height: 30%;
         position: relative;
         align-self: center;
-      }
-.vertical-center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
       }
 .h3
 {
