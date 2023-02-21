@@ -1,0 +1,107 @@
+.pricingTable .holder {
+    background: #fff;
+    box-shadow: 1px 20px 12px -15px rgba(0, 0, 0, 0.2);
+    padding: 40px 15px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: 0.5s ease;
+}
+
+.pricingTable .holder:hover {
+    transform: translateY(-5px);
+}
+
+.pricingTable .holder .hdng p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #242526;
+}
+
+.pricingTable .holder .img img {
+    width: 70%;
+}
+
+.pricingTable .holder .price p {
+    color: #f36233;
+    margin-bottom: 25px;
+}
+
+.pricingTable .holder .price p b {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.pricingTable .holder .price p span {
+    font-size: 18px;
+}
+
+.pricingTable .holder .info p {
+    margin-bottom: 15px;
+    color: #242526;
+    font-weight: 14px;
+}
+
+.pricingTable .holder.active {
+    background: #f36233;
+}
+
+.pricingTable .holder.active .hdng p,
+.pricingTable .holder.active .price p,
+.pricingTable .holder.active .info p {
+    color: #fff;
+}
+
+.pricingTable .holder.active .readon {
+    background: #fff;
+    color: #f36233 !important;
+}
+
+.pricingTable .holder.active .readon:hover {
+    background: #242526;
+    color: #fff !important;
+}
+
+.pricingTable .tabsBtnHolder ul {
+    float: left;
+    display: block;
+    width: 100%;
+    max-width: 326px;
+    border-radius: 1.6666666667rem;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    background: #f36233;
+    text-align: center;
+    position: relative;
+}
+
+.pricingTable .tabsBtnHolder ul li {
+    float: left;
+    width: calc(100% / 2);
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+.pricingTable .tabsBtnHolder ul li p {
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 10;
+    position: relative;
+    cursor: pointer;
+}
+
+.pricingTable .tabsBtnHolder ul li p.active {
+    color: #f36233;
+}
+
+.pricingTable .tabsBtnHolder ul li.indicator {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    /*163px*/
+    background: #fff;
+    height: calc(100% - 4px);
+    transform: translateY(-50%);
+    border-radius: 1.5333333333rem;
+    width: 161px;
+    z-index: 9;
+}
