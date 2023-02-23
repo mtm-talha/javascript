@@ -1,0 +1,22 @@
+.ending-container{
+    background-color: #a8ff35;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+.button4{
+    background-color:black;
+    border: none;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    border-radius: 25px;
+}
+.ending-content{
+   color:#87d322;
+}

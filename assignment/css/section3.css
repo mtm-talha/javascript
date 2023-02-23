@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    margin: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.text-wrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.paragraph-color1 {
+    color: #000000;
+}
+
+.paragraph-color2 {
+    color: #adadad;
+}
