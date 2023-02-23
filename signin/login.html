@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <script src="https://kit.fontawesome.com/2f55006fda.js" crossorigin="anonymous"></script>
+    <title>Sign in and Sign up</title>
+</head>
+<body>
+    <div class = "container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-field" id="fnamefield">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="input-field" id="lnamefield">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div class="input-field" id="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="tel" placeholder="Contact Number">
+                    </div>
+                    <div class="input-field" id="gender">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="gender">Gender</p>
+                        <input type="radio" name="gender" value="male" id="mgender"> Male
+                        <input type="radio" name="gender" value="female" id="fgender"> Female
+
+                    </div>
+                </div>
+                <div class="input-email-password">
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <p>Lost Password<a href='#'>Click Here!</a></p>
+                
+                <div class="btn-field">
+                    <button type="button" id="signupbtn">Sign Up</button>
+                    <button type="button" class="disable" id="signinbtn">Sign In</button>
+                </div>
+
+            </form>
+        </div>
+    </div>   
+<script>
+    let signupbtn = document.getElementById("signupbtn");
+    let signinbtn = document.getElementById("signinbtn");
+    let title = document.getElementById("title");
+    var selector = document.getElementsByClassName('input-group')
+    var selector2 = document.getElementsByClassName('input-email-password')
+     function hide (elements) {
+   elements = elements.length ? elements : [elements];
+   for (var index = 0; index < elements.length; index++) {
+     elements[index].style.display = 'none';
+   }
+ }
+ function show (elements, specifiedDisplay) {
+   elements = elements.length ? elements : [elements];
+   for (var index = 0; index < elements.length; index++) {
+     elements[index].style.display = specifiedDisplay || 'block';
+  }
+}
+
+signinbtn.onclick = function()
+{
+     hide(selector);
+     show(selector2);
+
+    
+
+    title.innerHTML = "Sign In";
+    signupbtn.classList.add("disable");
+    signinbtn.classList.remove("disable");
+}
+
+signupbtn.onclick = function()
+{
+    console.log("sign up button clicked");
+    fnamefield.style.maxHeight = "60";
+    lnamefield.style.maxHeight = "60";
+    contact.style.maxHeight = "60";
+    mgender.style.maxHeight = "60";
+    fgender.style.maxHeight = "60";
+
+    title.innerHTML = "Sign Up";
+    signupbtn.classList.remove("disable");
+    signinbtn.classList.add("disable");
+
+
+    show(selector,);
+}
+
+
+</script>
+</body>
+</html>
