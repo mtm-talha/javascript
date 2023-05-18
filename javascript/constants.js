@@ -1,3 +1,4 @@
+// data type whose value can not be changed
 const daysinWeek=7
 const monthsinYear=12
 const weeksinYear=52
