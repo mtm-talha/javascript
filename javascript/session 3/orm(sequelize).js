@@ -27,3 +27,46 @@ User.create({ name: "John Doe", age: 30 });
 User.findAll().then((users) => {
   console.log(users);
 });
+
+// To save a record in your database using Sequelize, you can use the save method
+user.save()
+  .then(() => {
+    console.log('User saved successfully.');
+  })
+  .catch(err => {
+    console.error('Error saving user:', err);
+  });
+
+// To update records in your database using Sequelize, you can use the update method
+User.update(
+  { name: 'John Doe', age: 30 },
+  {
+    where: {
+      id: 1
+    }
+  }
+)
+  .then(rowsUpdated => {
+    console.log('Rows updated:', rowsUpdated);
+  })
+  .catch(err => {
+    console.error('Error updating user:', err);
+  });
+
+// To delete records from your database using Sequelize, you can use the destroy method
+User.destroy({
+  where: {
+    id: 1
+  }
+})
+  .then(() => {
+    console.log('User deleted successfully.');
+  })
+  .catch(err => {
+    console.error('Error deleting user:', err);
+  });
+
+
+
+
+
