@@ -7,7 +7,6 @@ submit_button.onclick = () => {
     const pass = document.getElementById("pass").value;
     const cpass = document.getElementById("cpass").value;
 
-    console.log("Password is " , pass);
     
     localStorage.setItem('FirstName',fname);
     localStorage.setItem('LastNAme',lname);
@@ -17,8 +16,8 @@ submit_button.onclick = () => {
     localStorage.setItem('CPassword',cpass);
 
 
-    console.log(fname);
-    alert(fname + lname + contact + email + pass + cpass);
+    // console.log(fname);
+    // alert(fname + lname + contact + email + pass + cpass);
 
    // swal("Done", "Registration successful.", "success");
 
@@ -38,13 +37,26 @@ submit_button.onclick = () => {
 
 }
 
-// const login = document.querySelector('.login');
-// login.onClick = (e) => {
-//     e.preventDefault();
+const login = document.querySelector('.login');
+login.onClick = (e) => {
+    e.preventDefault();
     
-//     const emailaddress = document.getElementById("email").ariaValueMax;
-//     const password = document.getElementById("pass").ariaValueMax;
+    const emailaddress = document.getElementById("email").value;
+    const password = document.getElementById("pass").value;
 
-//     const emaill = localStorage.getItem("Password");
+    const email = localStorage.getItem("email");
+    const passw = localStorage.getItem("Password");
 
-// }
+    if(email=="")
+    {
+        swal("Wrong", "You have not entered any value", "warning")
+    }
+    else{
+        if(email == emailaddress && passw == password ){
+            swal("Done", "You have logged in successfully.", "success");
+
+        }
+    }
+
+
+}
