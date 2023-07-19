@@ -108,11 +108,33 @@ const array = [
 ];
 
 //<<<<<<<<<<<<<<----------Create user----------->>>>>>>>>>>
-// function addUser()
-// {
-//     array.push
+// 
+function addUser(newUser) {
+    // Generate a unique UserId for the new user (incrementing the last UserId)
+    const lastUserId = array.length > 0 ? array[array.length - 1].UserId : 0;
+    const newUserId = lastUserId + 1;
 
-// }
+    // Add the new UserId to the newUser object
+    newUser.UserId = newUserId;
+
+    // Append the new user to the array
+    array.push(newUser);
+
+    console.log('User added successfully.');
+}
+// Example usage:
+const newUser = {
+    UserName: "Ali",
+    DOB: "05-09-1993",
+    Location: "Karachi",
+    MobileNumber: "03123456789",
+    Gender: "Male",
+    Height: "6'0",
+    Weight: 80
+};
+
+addUser(newUser);
+
 
 //<<<<<<<<<<<<<<----------Update user----------->>>>>>>>>>>
 
@@ -243,3 +265,30 @@ if (foundUser) {
 } else {
     console.log('User not found.');
 }
+
+
+//<<<<<<<<<<<<<<<--------------Module - 2-------------------->>>>>>>>>>>>>>>>>>>>
+//<<<<<<<<<<<<<<<----------Calculate User BMI---------------->>>>>>>>>>>>>>>>>>>>
+
+function calculateBMI(weight, height) {
+    // Convert height from feet'inches" format to meters
+    const heightInMeters = height.split("'").map((part) => parseInt(part, 10)).reduce((acc, val) => acc + val * 0.3048, 0);
+
+    // Calculate BMI using the formula: BMI = weight (kg) / (height^2) (m^2)
+    const bmi = weight / (heightInMeters ** 2);
+    return bmi;
+}
+
+function getUserBMI(username) {
+    const user = array.find((user) => user.UserName === username);
+    if (!user) {
+        console.log('User not found.');
+        return;
+    }
+
+    const bmi = calculateBMI(user.Weight, user.Height);
+    console.log(`${user.UserName}'s BMI is: ${bmi.toFixed(2)}`);
+}
+
+// Example usage:
+getUserBMI('Yousaf');
